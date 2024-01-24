@@ -1,0 +1,181 @@
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+.headerimg {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+}
+
+.restaurantimg {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    margin-bottom: 2%;
+}
+
+hr {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.recipes {
+    color: white;
+    background-color: #333;
+    padding-top: 0.5%;
+}
+.recipes .videos {
+    margin: 1%;
+    display: flex;
+}
+.recipes iframe {
+    width: 50%;
+    margin: 1%;
+}
+
+.reservelink {
+    background-color: #333;
+    color: white;
+}
+
+.italic {
+    padding-top: 1%;
+    padding-bottom: 2%;
+    font-style: italic;
+}
+
+.italicemail {
+    padding-top: 1%;
+    padding-bottom: 2%;
+    font-style: italic;
+}
+
+.standard {
+    padding-bottom: 1%;
+}
+
+.fooditems img {
+    max-width: 50%;
+    height: auto;
+  }
+
+.map {
+    padding-bottom: 2%;
+}
+.phone {
+    background-color: #333;
+    color: white;
+}
+
+.email {
+    background-color: #333;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+nav {
+    background-color: #333;
+}
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li {
+    float: left;
+}
+a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    /* Styles for mobile devices */
+    ul {
+      flex-direction: column; /* Display the list items vertically */
+    }
+    li {
+      float: none; /* Remove the float property */
+    }
+    .recipes .videos {
+        flex-direction: column; /* Display the videos vertically */
+    }
+    .recipes iframe {
+        width: 100%; /* Make the videos occupy the full width of the container */
+        margin: 1% 0; /* Adjust the margin as needed */
+    }
+    h1 {
+        font-size: 24px; /* Adjust the font size for h1 on mobile screens */
+    }
+    h2 {
+        font-size: 20px; /* Adjust the font size for h2 on mobile screens */
+    }
+    h4 {
+        font-size: 12px;
+        padding: 5%;
+    }
+    .haukaimenu, .calendar, .reservationform, .map {
+        width: 100%; /* Adjust the width as needed */
+        height: 300px; /* Adjust the height as needed */
+    }
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+a.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 50%;
+}
+  
+a.back-to-top::before {
+    content: "";
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
